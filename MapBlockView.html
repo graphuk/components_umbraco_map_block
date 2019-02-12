@@ -1,97 +1,97 @@
 <div data-ng-controller="MapBlock.Controller" class="umb-pane">
 	<div id="mapBlock">
-        <div class="umb-box">
-            <div class="umb-box-header">
-                <div class="umb-box-header-title umb-row-title-bar">
-                    <div class="umb-control-title">
-                        Map block
-                    </div>
-                </div>
-            </div>
-            <div class="block-form umb-box-content">
-                <div class="umb-property">
-                    <div class="control-group umb-control-group">
-                        <div class="umb-el-wrap">
-                            <label class="control-label">
-                                <span>Title</span>
-                            </label>
-                            <div class="controls controls-row">
-                                <input type="text" class="input-block-level" ng-model="control.value.title" required />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-form umb-box-content">
-                <div class="umb-property">
-                    <div class="control-group umb-control-group">
-                        <div class="umb-el-wrap">
-                            <label class="control-label">
-                                <span>Address</span>
-                            </label>
-                            <div class="controls controls-row">
-                                <input type="text" class="input-block-level" ng-model="control.value.address" required />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-form umb-box-content">
-                <div class="umb-property">
-                    <div class="control-group umb-control-group">
-                        <div class="umb-el-wrap">
-                            <label class="control-label">
-                                <span>Cta text</span>
-                            </label>
-                            <div class="controls controls-row">
-                                <input type="text" class="input-block-level" ng-model="control.value.ctaText" required />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-form umb-box-content">
-                <div class="umb-property">
-                    <div class="control-group umb-control-group">
-                        <div class="umb-el-wrap">
-                            <label class="control-label">
-                                <span>Cta link</span>
-                            </label>
-                            <div class="controls controls-row">
-                                <input type="text" class="input-block-level" ng-model="control.value.ctaLink" required />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-form umb-box-content">
-                <div class="umb-property">
-                    <div class="control-group umb-control-group">
-                        <div class="umb-el-wrap">
-                            <label class="control-label">
-                                <span>Latitude</span>
-                            </label>
-                            <div class="controls controls-row">
-                                <input type="text" class="input-block-level" ng-model="control.value.latitude" required />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="block-form umb-box-content">
-                <div class="umb-property">
-                    <div class="control-group umb-control-group">
-                        <div class="umb-el-wrap">
-                            <label class="control-label">
-                                <span>Longitude</span>
-                            </label>
-                            <div class="controls controls-row">
-                                <input type="text" class="input-block-level" ng-model="control.value.longitude" required />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="umb-box">
+			<div class="umb-box-header">
+				<div class="umb-box-header-title umb-row-title-bar">
+					<div class="umb-control-title">
+						Map block
+					</div>
+				</div>
+			</div>
+			<div class="block-form umb-box-content">
+				<div class="umb-property">
+					<div class="control-group umb-control-group">
+						<div class="umb-el-wrap">
+							<label class="control-label">
+								<span>Title</span>
+							</label>
+							<div class="controls controls-row">
+								<input type="text" class="input-block-level" ng-model="control.value.title" required />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-form umb-box-content">
+				<div class="umb-property">
+					<div class="control-group umb-control-group">
+						<div class="umb-el-wrap">
+							<label class="control-label">
+								<span>Address</span>
+							</label>
+							<div class="controls controls-row">
+									<umb-editor model="addressRte"></umb-editor>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-form umb-box-content">
+				<div class="umb-property">
+					<div class="control-group umb-control-group">
+						<div class="umb-el-wrap">
+							<label class="control-label">
+								<span>Cta text</span>
+							</label>
+							<div class="controls controls-row">
+								<input type="text" class="input-block-level" ng-model="control.value.ctaText" required />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-form umb-box-content">
+				<div class="umb-property">
+					<div class="control-group umb-control-group">
+						<div class="umb-el-wrap">
+							<label class="control-label">
+								<span>Cta link</span>
+							</label>
+							<div class="controls controls-row">
+								<input type="text" class="input-block-level" ng-model="control.value.ctaLink" required />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-form umb-box-content">
+				<div class="umb-property">
+					<div class="control-group umb-control-group">
+						<div class="umb-el-wrap">
+							<label class="control-label">
+								<span>Latitude</span>
+							</label>
+							<div class="controls controls-row">
+								<input type="text" class="input-block-level" ng-model="control.value.latitude" required />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-form umb-box-content">
+				<div class="umb-property">
+					<div class="control-group umb-control-group">
+						<div class="umb-el-wrap">
+							<label class="control-label">
+								<span>Longitude</span>
+							</label>
+							<div class="controls controls-row">
+								<input type="text" class="input-block-level" ng-model="control.value.longitude" required />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
