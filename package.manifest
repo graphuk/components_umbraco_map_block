@@ -4,14 +4,11 @@
 			"name": "Map Block",
 			"alias": "mapBlock",
 			"view": "/App_Plugins/MapBlock/MapBlockView.html",
-			"render": "/App_Plugins/MapBlock/MapBlockRender.cshtml",
-			"icon": "icon-map-loaction"
+			"render": "/App_Plugins/MapBlock/Views/MapBlockRender.cshtml",
+			"icon": "icon-map-location"
 		}
 	],
 	"javascript": [
 		"/App_Plugins/MapBlock/MapBlock.Controller.js"
-	],
-	"css": [
-		"/App_Plugins/MapBlock/MapBlock.css"
 	]
 }
