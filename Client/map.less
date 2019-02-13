@@ -1,5 +1,21 @@
-.map__map {
-	height: 740px;
-	width: 100%;
-	z-index: 0;
+.map {
+	&__content {
+		position: relative;
+	}
+
+	&__map {
+		height: 740px;
+		z-index: 0;
+		position: relative;
+	}
+
+	&__tile {
+		bottom: auto;
+		padding: 20px;
+		top: 10px;
+		left: 50px;
+		z-index: 2;
+		position: absolute;
+		background: white;
+	}
 }
