@@ -6,3 +6,5 @@
 ## Dependencies:
 * Skybrud.Umbraco.GridData - https://github.com/skybrud/Skybrud.Umbraco.GridData (install via nuget)
 * UmbracoGridConfigLoader - https://www.nuget.org/packages/UmbracoGridConfigLoader (install via nuget)
+* Leaflet - https://www.npmjs.com/package/leaflet (install via npm)
+* Leaflet.GestureHandling - https://www.npmjs.com/package/leaflet-gesture-handling (install via npm)
