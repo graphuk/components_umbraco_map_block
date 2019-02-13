@@ -1,7 +1,7 @@
 {
 	"gridEditors": [
 		{
-			"name": "Map Block",
+			"name": "Map Block Data",
 			"alias": "mapBlock",
 			"view": "/App_Plugins/MapBlock/MapBlockView.html",
 			"render": "/App_Plugins/MapBlock/Views/MapBlockRender.cshtml",
