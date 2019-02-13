@@ -7,4 +7,4 @@
 2. Install Npm packages:
 * npm i leaflet --save
 * npm i leaflet-gesture-handling --save
-3. Copy all files to the folder 'AccordionBlock' in ~\App_Plugins\
+3. Copy all files to the folder 'MapBlock' in ~\App_Plugins\
