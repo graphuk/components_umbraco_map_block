@@ -1,4 +1,15 @@
 @using Skybrud.Umbraco.GridData.Rendering
 @inherits Umbraco.Web.Mvc.UmbracoViewPage<GridControlWrapper<Graph.Components.MapBlock.GridControlMapBlockValue>>
 
-<div>@Model.Value.GridControlMabBlockItem.Title</div>
+<div class="map">
+	<div class="map__content">
+		<div class="map__tile">
+			<div class="map__tile-title">@Model.Value.GridControlMabBlockItem.Title</div>
+			<div class="map__address">@Html.Raw(Model.Value.GridControlMabBlockItem.Address)</div>
+			<a href="@string.Format(Model.Value.GridControlMabBlockItem.CtaLink, Model.Value.GridControlMabBlockItem.Latitude, Model.Value.GridControlMabBlockItem.Longitude)" class="map__button">
+				@Model.Value.GridControlMabBlockItem.CtaText
+			</a>
+		</div>
+		<div class="map__map js-maps" data-zoom="11" data-pin="@Model.Value.GridControlMabBlockItem.Latitude,@Model.Value.GridControlMabBlockItem.Longitude"></div>
+	</div>
+</div>
