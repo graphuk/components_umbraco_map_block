@@ -4,12 +4,12 @@
 <div class="map">
 	<div class="map__content">
 		<div class="map__tile">
-			<div class="map__tile-title">@Model.Value.GridControlMabBlockItem.Title</div>
-			<div class="map__address">@Html.Raw(Model.Value.GridControlMabBlockItem.Address)</div>
-			<a href="@string.Format(Model.Value.GridControlMabBlockItem.CtaLink, Model.Value.GridControlMabBlockItem.Latitude, Model.Value.GridControlMabBlockItem.Longitude)" class="map__button">
-				@Model.Value.GridControlMabBlockItem.CtaText
+			<div class="map__tile-title">@Model.Value.GridControlMapBlockItem.Title</div>
+			<div class="map__address">@Html.Raw(Model.Value.GridControlMapBlockItem.Address)</div>
+			<a href="@string.Format(Model.Value.GridControlMapBlockItem.CtaLink, Model.Value.GridControlMapBlockItem.Latitude, Model.Value.GridControlMapBlockItem.Longitude)" class="map__button">
+				@Model.Value.GridControlMapBlockItem.CtaText
 			</a>
 		</div>
-		<div class="map__map js-maps" data-zoom="11" data-pin="@Model.Value.GridControlMabBlockItem.Latitude,@Model.Value.GridControlMabBlockItem.Longitude"></div>
+		<div class="map__map js-maps" data-zoom="11" data-pin="@Model.Value.GridControlMapBlockItem.Latitude,@Model.Value.GridControlMapBlockItem.Longitude"></div>
 	</div>
 </div>

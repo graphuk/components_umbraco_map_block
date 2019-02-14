@@ -7,11 +7,11 @@ namespace Graph.Components.MapBlock
 {
 	public class GridControlMapBlockValue : GridControlValueBase
 	{
-		public GridControlMabBlockItem GridControlMabBlockItem { get; protected set; }
+		public GridControlMapBlockItem GridControlMapBlockItem { get; protected set; }
 
 		public GridControlMapBlockValue(GridControl control, JToken obj) : base(control, obj as JObject)
 		{
-			GridControlMabBlockItem = JsonConvert.DeserializeObject<GridControlMabBlockItem>(obj.ToString());
+			GridControlMapBlockItem = JsonConvert.DeserializeObject<GridControlMapBlockItem>(obj.ToString());
 		}
 
 		public static GridControlMapBlockValue Parse(GridControl control, JToken obj)

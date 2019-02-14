@@ -1,6 +1,6 @@
 namespace Graph.Components.MapBlock
 {
-	public class GridControlMabBlockItem
+	public class GridControlMapBlockItem
 	{
 		public string Title { get; set; }
 		public string Address { get; set; }
