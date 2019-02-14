@@ -11,7 +11,7 @@ angular.module("umbraco").controller("MapBlock.Controller", function ($scope) {
 
 	$scope.control.value = $scope.control.value || new Item();
 
-	$scope.addressR
+	$scope.addressRte = {
 		label: 'bodyText',
 		description: 'Load some stuff here',
 		view: 'rte',
