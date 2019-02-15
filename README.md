@@ -7,5 +7,6 @@
 2. Install Npm packages:
 * npm i leaflet --save
 * npm i leaflet-gesture-handling --save
-3. Install [Content Blocks](https://github.com/graphuk/components_umbraco_content_blocks) (via Stamp)
+3. Install Content Blocks Stamp component
+* stamp component fetch graphuk components_umbraco_content_blocks
 4. Copy all files to the folder 'MapBlock' in ~\App_Plugins\
