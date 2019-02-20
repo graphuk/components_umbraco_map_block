@@ -4,6 +4,7 @@
 1. Install Nuget packages:
 * `Install-Package UmbracoGridConfigLoader`
 * `Install-Package Skybrud.Umbraco.GridData`
+* `Install-Package UmbracoLinkPicker`
 2. Install Npm packages:
 * `npm i leaflet --save`
 * `npm i leaflet-gesture-handling --save`

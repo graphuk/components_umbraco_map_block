@@ -16,9 +16,7 @@ namespace Graph.Components.MapBlock
 
 		public static GridControlMapBlockValue Parse(GridControl control, JToken obj)
 		{
-			if (obj != null)
-				return new GridControlMapBlockValue(control, obj);
-			return (GridControlMapBlockValue)null;
+			return obj != null ? new GridControlMapBlockValue(control, obj) : null;
 		}
 	}
 }

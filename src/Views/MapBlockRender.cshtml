@@ -1,13 +1,34 @@
+@using System.Text.RegularExpressions
+@using Gibe.LinkPicker.Umbraco.Models
+@using Graph.Components.MapBlock
 @using Skybrud.Umbraco.GridData.Rendering
 @inherits Umbraco.Web.Mvc.UmbracoViewPage<GridControlWrapper<Graph.Components.MapBlock.GridControlMapBlockValue>>
+
+@functions 
+{
+	private string AddHashtarget(LinkPicker link)
+	{
+		return link.Url + (string.IsNullOrEmpty(link.Hashtarget) == false ? $"#{link.Hashtarget}" : string.Empty);
+	}
+
+	private string ReplaceCoordinates(string link, GridControlMapBlockItem mapBlockItem)
+	{
+		return mapBlockItem.IncludeCoordinatesInUrl
+			? Regex.Replace(Regex.Replace(link, "{latitude}", mapBlockItem.Latitude, RegexOptions.IgnoreCase),
+				"{longitude}", mapBlockItem.Longitude, RegexOptions.IgnoreCase)
+			: link;
+	}
+}
 
 <div class="map">
 	<div class="map__content">
 		<div class="map__tile">
 			<div class="map__tile-title">@Model.Value.GridControlMapBlockItem.Title</div>
 			<div class="map__address">@Html.Raw(Model.Value.GridControlMapBlockItem.Address)</div>
-			<a href="@string.Format(Model.Value.GridControlMapBlockItem.CtaLink, Model.Value.GridControlMapBlockItem.Latitude, Model.Value.GridControlMapBlockItem.Longitude)" class="map__button">
-				@Model.Value.GridControlMapBlockItem.CtaText
+			<a href="@ReplaceCoordinates(AddHashtarget(Model.Value.GridControlMapBlockItem.Link), Model.Value.GridControlMapBlockItem)" 
+				target="@Model.Value.GridControlMapBlockItem.Link.Target"
+				class="map__button">
+				@Model.Value.GridControlMapBlockItem.Link.Name
 			</a>
 		</div>
 		<div class="map__map js-maps" data-zoom="11" data-pin="@Model.Value.GridControlMapBlockItem.Latitude,@Model.Value.GridControlMapBlockItem.Longitude"></div>
