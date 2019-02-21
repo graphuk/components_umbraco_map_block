@@ -1,5 +1,7 @@
 # Graph Umbraco Components - Map block
 
+* `stamp component fetch graphuk components_umbraco_map_block`
+
 ## Installation steps:
 1. Install Nuget packages:
 * `Install-Package UmbracoGridConfigLoader`
