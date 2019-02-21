@@ -25,11 +25,14 @@
 		<div class="map__tile">
 			<div class="map__tile-title">@Model.Value.GridControlMapBlockItem.Title</div>
 			<div class="map__address">@Html.Raw(Model.Value.GridControlMapBlockItem.Address)</div>
-			<a href="@ReplaceCoordinates(AddHashtarget(Model.Value.GridControlMapBlockItem.Link), Model.Value.GridControlMapBlockItem)" 
-				target="@Model.Value.GridControlMapBlockItem.Link.Target"
-				class="map__button">
-				@Model.Value.GridControlMapBlockItem.Link.Name
-			</a>
+			@if(Model.Value.GridControlMapBlockItem.Link != null)
+			{
+				<a href="@ReplaceCoordinates(AddHashtarget(Model.Value.GridControlMapBlockItem.Link), Model.Value.GridControlMapBlockItem)" 
+					target="@Model.Value.GridControlMapBlockItem.Link.Target"
+					class="map__button">
+					@Model.Value.GridControlMapBlockItem.Link.Name
+				</a>
+			}
 		</div>
 		<div class="map__map js-maps" data-zoom="11" data-pin="@Model.Value.GridControlMapBlockItem.Latitude,@Model.Value.GridControlMapBlockItem.Longitude"></div>
 	</div>
